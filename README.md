@@ -59,6 +59,7 @@ Il s'agit de réaliser l'échange d'informations entre deux cartes Arduino, la N
 L’une des cartes, la Nano 33 BLE Sense, sera configurée en tant qu’appareil central tandis que l’autre carte, la Nano 33 BLE, sera configurée en tant que périphérique. Les informations que nous allons partager entre les cartes proviendront du capteur gestuel embarqué de la carte Nano 33 BLE Sense.
 Pour ce faire, nous devons créer un service appelé gestureService qui aura une caractéristique appelée gesture_type. L’appareil central, le Nano 33 BLE Sense, va se connecter à l’appareil périphérique, le Nano 33 BLE, et recherchera le service appelé gestureService. Une fois qu’une connexion est établie entre le périphérique central et le périphérique, si le périphérique central détecte un geste avec son capteur de geste, il écrira le type du geste détecté dans la caractéristique gesture_type du gestureService. 
 Les codes pour le test de l'appareil central et l'appareil périphérique sont dans les fichiers joints au projet.
+
 Je n'ai pas pu terminer cette partie car le port USB de ma carte Arduino ne fonctionnait pas
 
 
